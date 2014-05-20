@@ -8,10 +8,10 @@
   },
   "license": "MIT",
   "dependencies": {
-    "orchestrate": "*",
-    "node-uuid": ">=1"
+    "orchestrate": ">=0.1.2",
+    "node-uuid": ">=1.4.1"
   },
-    "devDependencies": {
-    "lab": ">=3"
+  "devDependencies": {
+    "lab": ">=3.1.1"
   }
 }
