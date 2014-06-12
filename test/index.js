@@ -137,7 +137,7 @@ describe('users-lib', function () {
     });
 
     describe('destroy', function(){
-        it('returns the id of the new object', function(done){
+        it('returns a null response', function(done){
             var users = new Users();
 
             Nock(orchestrateUrl)
@@ -146,8 +146,8 @@ describe('users-lib', function () {
 
             users.destroy({
                 id: '123'
-            }, function(err, id){
-                expect(response).to.be.a('null');
+            }, function(err){
+                expect(err).to.be.a('null');
 
                 done();
             });
